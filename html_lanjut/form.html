@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+
+    <h2>Form Registrasi</h2>
+
+    <form>
+<!--biodata -->
+        <fieldset>
+            <legend>Biodata</legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Mahasiswa</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="nama" name="nama" value="Nama Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">No Induk Mahasiswa (NIM)</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="nim" name="nim" value="123456789"></td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat Mahasiswa</label></td>
+                    <td>:</td>
+                    <td><textarea id="alamat" name="alamat" rows="4" cols="30">Alamat Anda</textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Tanggal Lahir</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="tanggal">
+                            <option value="01">01</option>
+                        </select>
+                        <select name="bulan">
+                            <option value="Januari">Januari</option>
+                        </select>
+                        <select name="tahun">
+                            <option value="1990">1990</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="pria" name="jenis_kelamin" checked> <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jenis_kelamin"> <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="upload">Upload Foto</label></td>
+                    <td>:</td>
+                    <td><input type="file" id="upload" name="upload"></td>
+                </tr>
+                <tr>
+                    <td><label for="url">URL Website</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="url" name="url" value="URL Website Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="perguruan_tinggi">Perguruan Tinggi</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="perguruan_tinggi" name="perguruan_tinggi"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Info Akun</legend>
+            <table>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="email" name="email" value="Email Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="username" name="username" value="Username Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" id="password" name="password" value="Password Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="ulangi_password">Ulangi Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" id="ulangi_password" name="ulangi_password" value="Password Anda"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+            <input type="checkbox" id="html" name="kemampuan"> <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="kemampuan"> <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="kemampuan"> <label for="javascript">Javascript</label>
+            <input type="checkbox" id="php" name="kemampuan"> <label for="php">PHP</label>
+            <input type="checkbox" id="mysql" name="kemampuan"> <label for="mysql">MySQL</label>
+            <input type="checkbox" id="laravel" name="kemampuan"> <label for="laravel">Laravel</label>
+            <input type="checkbox" id="react_native" name="kemampuan"> <label for="react_native">React Native</label>
+        </fieldset>
+
+        <br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Simpan</button>
+        <button type="button">Button</button>
+    </form>
+
+</body>
+</html>
